@@ -36,7 +36,7 @@
     color :var(--primary);
 }
 
-.bannar_content p, .toptouresm_header p, .destiontion_heared p, .choose_header p, .footer_text{
+.bannar_content p, .toptouresm_header p, .destiontion_heared p, .choose_header p, .discount_header p, .footer_text{
     max-width: 50%;
     margin: auto;
 }
@@ -305,6 +305,130 @@
     margin: auto;
 }
 /* choose section style ends here */
+/* discount section style starts here */
+#discount_section{
+    margin-bottom: 100px;
+}
+.discount_header{
+    text-align: center;
+}
+.discount_header h2{
+    margin-bottom: 30px;
+    font-size: 35px;
+    font-weight: 800;
+}
+.discount_header p{
+    margin-bottom: 30px;
+    font-size: 13px;
+    color: rgba(19, 19, 24, 0.70);
+}
+.discount_list .discount_firstItem {
+    background: url(./Images/Group\ 39.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 16px;
+}
+.discount_list .discount_firstItem .discount_bg{
+    background:  #d3d3d300;
+    display: flex;
+    justify-content: right;
+}
+.discount_list .discount_secondItem {
+    margin-top: 30px;
+    background: url(./Images/Group\ 40.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 16px;
+}
+.discount_list .discount_secondItem .discount_bg{
+    background:  #d3d3d300;
+    display: flex;
+}
+.discount_list .discount_thirdItem {
+    margin-top: 30px;
+    background: url(./Images/Group\ 39.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 16px;
+}
+.discount_list .discount_thirdItem .discount_bg{
+    background:  #d3d3d300;
+    display: flex;
+    justify-content: right;
+}
+.discount_list .discount_firstItem .discount_detels,
+.discount_list .discount_secondItem .discount_detels,
+.discount_list .discount_thirdItem .discount_detels{
+    width: 40%;
+    background: #ffffffd1;
+    margin: 30px;
+    padding: 30px 20px;
+    border-radius: 10px;
+}
+.discount_list .discount_firstItem .discount_detels h2,
+.discount_list .discount_secondItem .discount_detels h2,
+.discount_list .discount_thirdItem .discount_detels h2{
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+.discount_list .discount_firstItem .discount_detels .discount_datetime,
+.discount_list .discount_secondItem .discount_detels .discount_datetime,
+.discount_list .discount_thirdItem .discount_detels .discount_datetime{
+    margin-bottom: 15px;
+}
+.discount_list .discount_firstItem .discount_detels .discount_datetime span,
+.discount_list .discount_secondItem .discount_detels .discount_datetime span,
+.discount_list .discount_thirdItem .discount_detels .discount_datetime span{
+    font-size: 12px;
+    margin-right: 20px;
+}
+.discount_list .discount_firstItem .discount_detels .discount_datetime span i,
+.discount_list .discount_secondItem .discount_detels .discount_datetime span i,
+.discount_list .discount_thirdItem .discount_detels .discount_datetime span i{
+    color: var(--primary);
+    padding-right: 5px;
+}
+.discount_list .discount_firstItem .discount_detels .content,
+.discount_list .discount_secondItem .discount_detels .content,
+.discount_list .discount_thirdItem .discount_detels .content{
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+.discount_list .discount_firstItem .discount_detels .price,
+.discount_list .discount_secondItem .discount_detels .price,
+.discount_list .discount_thirdItem .discount_detels .price{
+    color: #FF5400;
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+.discount_list .discount_firstItem .discount_detels button,
+.discount_list .discount_secondItem .discount_detels button,
+.discount_list .discount_thirdItem .discount_detels button{
+    padding: 8px 15px;
+    font-size: 15px;
+    color: #fff;
+    border: none;
+    background: var(--primary);
+    border-radius: 5px;
+}
+.discount_moreBtn{
+    text-align: center;
+    margin-top: 20px;
+}
+.discount_moreBtn button{
+    padding: 8px 15px;
+    font-size: 15px;
+    color: #fff;
+    border: none;
+    background: var(--primary);
+    border-radius: 5px;
+}
+/* discount section style ends here */
 /* form section style starts here */
 #form_section .form_content{
     display: flex;
@@ -398,10 +522,10 @@
         flex-direction: column;
         gap: 10px;
     }
-    .bannar_content h2 {
+    .bannar_content h2, .toptouresm_header h2, .destiontion_heared h2, .choose_header h2, .discount_header h2{
         font-size: 25px;
     }
-    .bannar_content p, .footer_text{
+    .bannar_content p, .toptouresm_header p, .destiontion_heared p, .choose_header p, .discount_header p, .footer_text{
         font-size: 12px;
         max-width: 80%;
         margin: auto;
@@ -434,6 +558,15 @@
     }
     .choose_content_three {
         width: 100%;
+    }
+    .discount_list{
+        margin-top: 30px;
+    }
+    .discount_list .discount_firstItem .discount_detels,
+    .discount_list .discount_secondItem .discount_detels,
+    .discount_list .discount_thirdItem .discount_detels{
+        width: 100%;
+        margin-top: 150px;
     }
     #form_section .form_content{
         flex-direction: column;
