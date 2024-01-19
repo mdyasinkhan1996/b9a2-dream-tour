@@ -246,8 +246,11 @@
 .srilanka {
     width: 70%;
 }
-.america {
+.america{
     width: 100%;
+}
+.kashmir{
+    width: 60%;
 }
 .destination_secondImg img{
     width: 100%;
@@ -255,6 +258,19 @@
 }
 .destination_thirdImg img{
     width: 100%;
+}
+.bangladesh{
+    width: 45%;
+}
+.bandarban{
+    width: 55%;
+}
+.bangladesh img{
+    height: 200px;
+}
+.bandarban img{
+    height: 200px;
+
 }
 /* destination section style ends here */
 /* choose section style starts here */
@@ -546,6 +562,15 @@
         flex-direction: column;
     }
     .srilanka{
+        width: 100%;
+    }
+    .kashmir{
+        width: 100%;
+    }
+    .bangladesh{
+        width: 100%;
+    }
+    .bandarban{
         width: 100%;
     }
     .destination_firstImg img, .destination_secondImg img, .destination_thirdImg img {
